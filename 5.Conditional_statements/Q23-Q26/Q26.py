@@ -15,7 +15,7 @@ Number_of_classes_attended = int(input("Enter the total number of classes that y
 
 percentage_of_class_attended = (Number_of_classes_attended/Number_of_classes_held)*100
 
-print(percentage_of_class_attended)
+print(f"{percentage_of_class_attended:.2f}%")
 
 if (percentage_of_class_attended < 75):
     print(f"not allowed to sit in exam")
