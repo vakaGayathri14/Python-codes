@@ -14,5 +14,8 @@ Output: 4
 
 """
 
-number =input("Enter a number")
-print(number[-1])
+# number =input("Enter a number")
+# print(number[-1])
+
+number = int(input("Enter a number"))
+print(number%10)
