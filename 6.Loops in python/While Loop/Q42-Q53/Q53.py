@@ -13,5 +13,15 @@ while y<x:
     print(y)
     y=y+1
 
+
+#     if x < y:
+#     while x <= y:
+#         print(x)
+#         x = x + 1
+# else:
+#     while y <= x:
+#         print(y)
+#         y = y + 1
+
     
 
