@@ -8,7 +8,10 @@ y = int(input("Enter a number y: "))
 
 while x<y:
     print(x)
-    x+=1
+    x = x+1
 while y<x:
     print(y)
-    y=y-1
+    y=y+1
+
+    
+
