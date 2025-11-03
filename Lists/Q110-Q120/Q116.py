@@ -13,9 +13,15 @@ my_list = [5, 10, 15, 25, 20, 15]
 
 
 # without sorting
-new = 0
-largest = []
-for i in range(len(my_list)):
-    if my_list[i] > new:
-        largest = my_list.append(my_list[i])
-print(largest)
+my_list = [54, 32, 17, 67, 43, 11, 87, 44, 54, 32]
+largest = float("-inf")
+second_largest = float("-inf")
+
+
+for i in my_list:
+    if i > largest:
+        second_largest = largest
+        largest = i
+    elif i > second_largest and i < largest:
+        second_largest = i
+print(second_largest)
