@@ -4,6 +4,7 @@ using slicing.
 """
 
 a = [23, 54, 78, 43, 12, 34, 89]
-n = int(input("enter a number"))
-o = a[::-1]
-print(o)
+n = int(input("Enter a number: "))
+
+b = a[:n][::-1]
+print(b)
