@@ -7,20 +7,21 @@ my_dict = {
 print(my_dict)
 
 #  delete the gender
-# del my_dict["gender"]
-# print(my_dict)
+del my_dict["gender"]
+print(my_dict)
 
 # delete dictionary
+
 # del my_dict
 # print(my_dict)  # because it is deleted
 
 # other method
 
-# my_dict.pop("name")
-# print(my_dict)
+my_dict.pop("name")
+print(my_dict)
 
 
-# my_dict.pop()
+# my_dict.pop() #error
 print(my_dict)
 
 
