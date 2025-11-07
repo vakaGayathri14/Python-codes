@@ -12,8 +12,9 @@ students_data = {
     "Student4": [80, 85, 88, 92, 87],
     "Student5": [92, 88, 95, 90, 85],
 }
-
+print(students_data.items())
 for name, marks in students_data.items():
     total = sum(marks)
+    print(total)
     percentage = total / 500 * 100
     print(f"{name} has scored total {total} marks, percentage = {percentage:.2f}")

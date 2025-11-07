@@ -11,8 +11,8 @@ d2 = {"a": 300, "b": 200, "d": 400}
 result = {}
 print(d1.items())
 for i, j in d1.items():
-    if i in result:
-        result[i] = j
+    result[i] = j
+
 for i, j in d2.items():
     if i in result:
         result[i] = result[i] + j
