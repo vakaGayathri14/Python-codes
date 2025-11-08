@@ -25,7 +25,7 @@ sailu -> 567[total marks]
 
 """
 
-# print(students_data)
+print(students_data)
 
 for names, details in students_data.items():
     # print(names)
@@ -36,3 +36,18 @@ for names, details in students_data.items():
 
 
 # do without sum of above sum
+
+for names, details in students_data.items():
+    # print(names)
+    # print(details)
+    # print(details["marks"])
+    total = sum(details["marks"])
+    print(f"{names} scored {total} marks")
+
+
+for names, details in students_data.items():
+    x = 0
+    # print(details["marks"])
+    for i in range(len(details["marks"])):
+        x = x + details["marks"][i]
+    print(f"{names} scored {x} marks")
