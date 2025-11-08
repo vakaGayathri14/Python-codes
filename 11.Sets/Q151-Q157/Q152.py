@@ -17,3 +17,7 @@ print(f)
 x = d.intersection(e)
 print(x)
 print(f.intersection(x))
+
+# other way
+
+print(d.intersection(e).intersection(f))
