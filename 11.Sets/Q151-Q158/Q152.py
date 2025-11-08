@@ -21,3 +21,7 @@ print(f.intersection(x))
 # other way
 
 print(d.intersection(e).intersection(f))
+
+
+# other way
+print(set(a) & set(b) & set(c))

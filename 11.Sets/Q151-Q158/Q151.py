@@ -13,3 +13,9 @@ print(c)
 print(d)
 
 print(c.intersection(d))
+
+# other way
+print(c & d)  # & is used for intersection
+
+# if we want to use union we have |
+# print(c | d)
