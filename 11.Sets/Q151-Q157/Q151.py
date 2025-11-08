@@ -1,5 +1,5 @@
 """
-Q158. Given two lists a, b. Check if two lists have at least one element
+Q151. Given two lists a, b. Check if two lists have at least one element
 common in them.
 
 """
