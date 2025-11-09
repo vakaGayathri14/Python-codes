@@ -13,4 +13,5 @@ def palindrome(st):
         print("Not a palindrome")
 
 
-palindrome("12121y")
+palindrome("12121")
+palindrome("MOM")
