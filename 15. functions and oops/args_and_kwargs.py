@@ -3,45 +3,45 @@
 
 # args -> arguments
 
-# def add(n1, n2, n3):
-#     total = n1 + n2 + n3
-#     print(total)
+def add(n1, n2, n3):
+    total = n1 + n2 + n3
+    print(total)
 
 
-# add(1, 2, 3)
-# add(100, 7, 3)
-# add(12, 24)
+add(1, 2, 3)
+add(100, 7, 3)
+add(12, 24)
 
 
 # in place of args you can give xyz any thing you want mostly args will be used and when you run this out will come in tuple
-# def add(*args):
-#     print(args)
+def add(*args):
+    print(args)
 
 
-# add(1, 2, 3)
-# add(100, 7, 3)
-# add(12, 24)
+add(1, 2, 3)
+add(100, 7, 3)
+add(12, 24)
 
 
 # and if you want to check the sum then
 
 
-# def add(*args):
-#     print(sum(args))
+def add(*args):
+    print(sum(args))
 
 
-# add(1, 2, 3)
-# add(100, 7, 3)
-# add(12, 24)
+add(1, 2, 3)
+add(100, 7, 3)
+add(12, 24)
 
 # using list
 
 
-# def add(*args):
-#     print(args)
+def add(*args):
+    print(args)
 
 
-# add([1, 2], [100, 200], 45, 100)  # 4 arguments here
+add([1, 2], [100, 200], 45, 100)  # 4 arguments here
 # using tha above arguments you cannot take sum because list and numbers
 
 
@@ -76,6 +76,6 @@ def add(n1, n2, n3, *args, **kwargs):
     print(f"{kwargs["name"]}")
 
 
-# add(5, 10, 15)  # now these 3 arguments won't go to args because we have n1,n2,n3 we have to provide the values for them so
-# add(5, 10, 15, 100, 200, 300)  # now rest of the values 100,200,300 will go under args
+add(5, 10, 15)  # now these 3 arguments won't go to args because we have n1,n2,n3 we have to provide the values for them so
+add(5, 10, 15, 100, 200, 300)  # now rest of the values 100,200,300 will go under args
 add(5, 10, 15, 100, 200, 300, name="Honey")  # here kwargs as name:Honey
