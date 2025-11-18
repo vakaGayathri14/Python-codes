@@ -61,12 +61,24 @@ banks = [] # empty list with a variable banks
 # banks[1].show_balance()
 # rather than creating for each object like above here we use while loop
 
+
+def check_account_exists(acc_no:int):
+    global banks
+    for i in banks:
+        if i.account_number == acc_no:
+            # return True
+            return i
+    # return False
+    return None
+
+
 while True:
     print("1. Create account")
     print("2. Show all bank details")
     print("3. Deposit amount")
     print("4.Withdraw amount")
-    print("5. Exit")
+    print("5.Transfer amount") # hard
+    print("6. Exit")
     choice=int(input("Enter choice = "))
     if choice == 1:
         obj = Bank()
@@ -104,9 +116,25 @@ while True:
                         i.withdraw()
             else:
                 print("Enter a valid account number")
-
-
     elif choice == 5:
+        from_acc_no= int(input("Enter account number from which you want to transfer: "))
+        to_acc_no= int(input("Enter account number to which you want to transfer: "))
+        
+        # if check_account_exists(from_acc_no) and check_account_exists(to_acc_no):
+        from_acc_obj = check_account_exists(from_acc_no)
+        to_acc_obj =check_account_exists(to_acc_no)
+        if from_acc_obj!=None and to_acc_obj!=None:
+            transfer_amount = int(input("Enter transfer amount = "))
+            if from_acc_obj.balance<transfer_amount:
+                print("Insufficient amount")
+            else:
+                from_acc_obj.balance=from_acc_obj.balance - transfer_amount
+                to_acc_obj.balance=to_acc_obj.balance + transfer_amount
+
+        else:
+            print("Account doesn't exists")
+
+    elif choice == 6:
         break
     else:
         print("Invalid Choice")
