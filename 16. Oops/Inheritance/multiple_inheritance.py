@@ -1,31 +1,31 @@
-# class Father:
-#     father_name=""
+class Father:
+    father_name=""
 
-#     def display_father_name(self):
-#         print(self.father_name)
-
-
-# class Mother:
-#     mother_name = ""
-
-#     def display_mother_name(self):
-#         print(self.mother_name)
+    def display_father_name(self):
+        print(self.father_name)
 
 
-# class Child(Father, Mother): # now i want properties of both father and mother in child class 
-#     child_name = ""
+class Mother:
+    mother_name = ""
 
-#     def display_child_name(self):
-#         print(self.child_name)
+    def display_mother_name(self):
+        print(self.mother_name)
 
-# c1 = Child()
-# c1.father_name = "VNR"
-# c1.mother_name = "Anuradha"
-# c1.child_name = "Honey"
 
-# c1.display_father_name()
-# c1.display_mother_name()
-# c1.display_child_name()
+class Child(Father, Mother): # now i want properties of both father and mother in child class 
+    child_name = ""
+
+    def display_child_name(self):
+        print(self.child_name)
+
+c1 = Child()
+c1.father_name = "VNR"
+c1.mother_name = "Anuradha"
+c1.child_name = "Honey"
+
+c1.display_father_name()
+c1.display_mother_name()
+c1.display_child_name()
 
 print("------------------")
 # want to implement init and wan to see if i write super which will it refer because her child is referring to 2 classes if we call super in child class then it will refer to the first class where we provide as parameters
